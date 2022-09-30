@@ -1,196 +1,208 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:ital,wght@1,700&family=Orbitron:wght@400;600;900&family=Oswald:wght@700&family=Poppins:ital,wght@0,500;0,700;0,900;1,300&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
 body{
-    font-family: 'poppins';
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+    width: 80vw;
+    margin: auto;
+}
 
-}
-* {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-}
-.target{
+/* Navbar */
+
+nav{
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
-    margin-top: 40px;
-    margin-left: 60px;
+    align-items: center;
+    height: 8rem;
 }
+
+nav img{
+    height: 2.5rem;
+}
+
 .nav-items{
     display: flex;
-    flex-direction: row;
-    margin-left: 10rem;
-    font-size: 25px;
-    margin-top: 10px;
-    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3rem;
 }
+
 .nav-item{
-    font-weight: 100;
-    margin-right: 60px;
+    margin: 0 2rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgb(69, 69, 69);
 }
+
 .active-item{
-    font-weight: bold;
-    color: #FE5E35;
+    color: #fe5e35;
+    font-weight: 800;
 }
-.nav-item:hover{
-    color: #FE5E35;
-    cursor: pointer;
-    font-weight: bold;
-}
-.image2{
-    height: 45px;
-    
-}
+
+/* Hero Section */
+
 .intro-section{
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* position: relative; */
 }
-h3{
-    margin-top: 6rem;
-    font-size: 40px;
+
+
+
+.left-section h3{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
     font-weight: 400;
 }
-h3 img{
-    height: 35px;
-    
+
+[alt="circles"]{
+    height: 2.5rem;
+    margin-left: 1rem;
 }
-h1 {
-    font-size: 70px;
-    margin-top: 2%;
-    font-weight: bold;
-    font-family: 'Fredoka one';
+
+.left-section h1{
+    font-family: 'Fredoka One',sans-serif;
+    font-size: 4rem;
+    margin: 1rem 0 2rem 0;
 }
-.sub-headlines{
-    margin-left: 12%;
-    margin-top: 2%;
-    
-}
+
+
 .sub-headline{
-    font-size: 25px;
-    font-weight: 100;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    padding-left: 4rem;
+}
 
+.sub-headline img{
+    background-color:#fe5e35;
+    padding: .3rem;
+    border-radius: 2rem;
+    margin-right: 1rem;
+    height: 1.7rem;
 }
-.sub-headline img {
-    height: 15px;
-    margin-right: 10px;
-    
-}
-h5 img{
-    background-color: #FE5E35;
-    border: none;
-    border-radius: 50%;
-    padding: 4px 5px;
-}
-.text {
-    margin-top: 6%;
-    font-size: 13px;
-}
-.action-btns{
-    margin-top: 6%;
 
-} 
+.text{
+    width: 70%;
+    color: #758283;
+    line-height: 1.8;
+    margin: 3rem 0;
+}
+
 .action-btn{
-    border: none;
-    border-radius: 20px;
-    padding: 10px 30px;
-    background-color: #FE5E35;
     color: #fff;
-    margin-right: 40px;
-} 
-.left-section{
-    margin-left: 60px;
+    background-color: #fe5e35;
+    border-radius: 3rem;
+    padding: .8rem 1.6rem;
+    border: none;
+    font-size: 1rem;
+    margin-right: 1.4rem;
 }
-.headphone{
-    right: 0;
-    top: 0;
-    position: absolute;
-    height: 28rem;
-    margin-top: 7rem;
-    margin-right: 10rem;
+
+
+
+
+/* right section images */
+
+.headphone-div{
+    position: relative;
+    padding-left: 2rem;
+}
+
+[alt="headphone"]{
+    height: 25rem;
     z-index: -1;
 }
-.action-btn1{
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 30px;
-    background-color: #FE5E35;
-    color: #fff;
-    margin-right: 19.5%;
-    margin-bottom: 3.5%;
-}
-.yellow-dot{
-    height: 20px;
-    width: 20px;
-    background-color:#FBD104;
-    border:none;
-    border-radius: 50%;
-    padding: 2px 2px;
-    margin-right: 20px;
-}
-.tomato-dot{
-    height: 20px;
-    width: 20px;
-    background-color:#FE5E35;
-    border:none;
-    border-radius: 50%;
-    padding: 2px 2px;
-    margin-right: 20px;
-}
-.black-dot{   height: 20px;
-    width: 20px;
-    background-color:black;
-    border:none;
-    border-radius: 50%;
-    padding: 2px 2px;
-    margin-right: 20px;
 
-}
 .discount{
-    right: 0;
+    height: 6rem;
     position: absolute;
-    margin-right: 33.5%;
-    height: 7.5rem;
-    margin-top: 18%;
-
+    left: 0;
+    bottom:2rem;
 }
-.discount-content h4{
-    font-size: 12px;
-    
-    
-}
-.discount-content h1{
-    font-size: 40px;
-    font-weight: 500;
 
-
+.right-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .discount-content{
-    right:0;
-    position: absolute;
-    margin-top: 20%;
-    margin-right:34.5%;
     color: #fff;
-
+    position: absolute;
+    left: 1.6rem;
+    top: 19rem;
 }
+
+.discount-content h1{
+    font-family: 'Fredoka One',sans-serif;
+    font-size: 1.5rem;
+}
+
 .dots{
     display: flex;
-    flex-direction:row ;
-    right: 0;
-    position: absolute;
-    margin-top: 30rem;
-    margin-right: 18.5rem;
-}
-@media screen and (max-width:1250px) {
-    
-    .headphone {
-        height: 15rem;
-    }
-    .action-btn1{
-        display: block;
-    }
-    
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    margin-bottom: 2rem;
+
 }
 
+.dot{
+    height: 1.3rem;
+    width: 1.3rem;
+    border-radius: 3rem;
+}
+
+.yellow-dot{ background-color: #E8BD0D;}
+.tomato-dot {background-color: #fe5e35;}
+.black-dot {background-color: #000;}
+
+.right-section button{
+    margin-left: 2rem;
+}
+
+
+/* Rwsponsive Design for 768px */
+
+@media only screen and (max-width:768px) {
+    .nav-items {
+        display: none;
+    }
+
+    nav img{
+        height: 2rem;
+    }
+
+    .intro-section {
+        flex-direction: column-reverse;
+    }
+
+    [alt="headphone"]{
+        height: 15rem;
+    }
+
+    .action-btn{
+        font-size: .8rem;
+    }
+
+    .right-section {
+        margin-bottom: 3rem;
+    }
+
+    .left-section h1{
+        font-size: 3rem;
+    }
+    .discount {
+        display: none;
+    }
+}
